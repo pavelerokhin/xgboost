@@ -1,4 +1,4 @@
-# xgboost
+# XGBoost
 XGBoost notebook
 The notebook is a data preparation and modeling pipeline for predicting customer churn using 
 XGBoost. 
