@@ -1,6 +1,4 @@
 """
-Script Summary:
-
 This script performs a binary classification task using XGBoost algorithm. It reads a data file in XLSX or CSV format,
 performs data cleaning and type casting, splits the data into training and testing sets, trains an XGBoost model, and
 evaluates the model's performance using confusion matrices.
@@ -13,9 +11,11 @@ Parameters:
 - numeric_features_labels: List[str] - Labels of numeric features in the data.
 - features_to_drop: List[str] - Labels of features to be dropped from the data.
 
-Functions: - to_numeric(df: pd.DataFrame, label: str) -> None: Converts a column in the DataFrame
-to numeric type, handling missing data. - read_data_file(file_path: str) -> pd.DataFrame:
-Reads the data file based on its extension (XLSX or CSV). Returns a pandas DataFrame. """
+Functions:
+- to_numeric(df: pd.DataFrame, label: str) -> None: Converts a column in the DataFrame
+to numeric type, handling missing data.
+- read_data_file(file_path: str) -> pd.DataFrame: Reads the data file based on its extension (
+XLSX or CSV). Returns a pandas DataFrame. """
 
 import pandas as pd
 import xgboost as xgb
